@@ -1,0 +1,74 @@
+.app__skill {
+  width: 80%;
+  margin-top: 2rem;
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+.app__skill-list {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  .app__skill-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+    transition: all 0.4s ease-in-out;
+
+    div {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background-color: #fef4f5;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+      img {
+        width: 50%;
+        height: 50%;
+      }
+      &:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      }
+
+      @media screen and (max-width: 450px) {
+        width: 80px;
+        height: 80px;
+      }
+    }
+    p {
+      margin-top: 1rem;
+    }
+  }
+}
+.app__skill-experience {
+  flex: 1;
+  display: flex;
+  gap: 2rem;
+  margin-left: 5rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  @media screen and (max-width: 1200px) {
+    margin-left: 2rem;
+  }
+}
+
+.app__skill-exp-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+  margin: 1rem 0;
+  width: 100%;
+}
